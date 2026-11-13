@@ -1,10 +1,15 @@
-public class Main {
-    public static void main(String[] args) {
-        String nome = (args.length > 0) ? args[0] : "visitante";
-        System.out.println("Seja bem-vindo(a), " + nome + "! Projeto Git em execução.");
+System.out.println("\n=== TESTE DE SEGURANÇA ===");
 
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("i = " + i);
-        }
-    }
-}
+Cofre cofreTeste = new Cofre(5678);
+
+cofreTeste.destrancar(1111);
+cofreTeste.destrancar(2222);
+cofreTeste.destrancar(3333);
+
+System.out.println("Tentativas incorretas: " + cofreTeste.getContador());
+System.out.println("Cofre bloqueado: " + cofreTeste.isBloqueio());
+
+// Mesmo com a senha correta, não deve abrir
+cofreTeste.destrancar(5678);
+
+System.out.println("Cofre aberto: " + cofreTeste.isEstadoAberto());
