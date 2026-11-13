@@ -1,4 +1,6 @@
 //Outro metodo diferente de se fazer.
+// Luma Napolis RA: 1261947451
+// Nicolas Xavier RA:1261933040
 
 public class Cofre {
 
