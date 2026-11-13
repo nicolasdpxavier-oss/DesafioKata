@@ -1,3 +1,8 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
 System.out.println("\n=== TESTE DE SEGURANÇA ===");
 
 Cofre cofreTeste = new Cofre(5678);
